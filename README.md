@@ -1,2 +1,2 @@
 #EthLink
-This project basically creates a web based Discussion room for users.
+Basically this project provides a web based Discussion room for users. I used Pyhton-Django, Html, CSS, JavaScript for the development.
