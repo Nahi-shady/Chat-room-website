@@ -5,17 +5,16 @@
   --color-dark: #272222;
   --color-dark-medium: #2f3030d3;
   --color-dark-light: #a8a6a6;
-  --color-light: #e5e5e5;
+  --color-light: #fafafa;
   --color-gray: #8b8b8b;
   --color-light-gray: #b2ecc9;
-  --color-bg: #3a3a3a;
+  --color-bg: #ffffff;
   --color-success: #5dd693;
   --color-error: #fc4b0b;
   --color-pink: #ffffffc2;
   --color-nav: #3678f3;
   --color-box: #f8fcd4;
   --color-roomlist: #000000;
-
 }
 
 /*========== base styles ==========*/
@@ -576,7 +575,11 @@ li {
 =>  Topics
 ================================*/
 .topics {
-  
+  display: block;
+  background-color: var(--color-dark);
+  margin: 1rem;
+  border-radius: 3rem;
+  height: fit-content;
   padding: 20px;
 }
 .topics__header {
@@ -650,6 +653,9 @@ li {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2.4rem;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .roomList__header h2 {
@@ -807,11 +813,13 @@ li {
 }
 
 .activities__boxRoomContent {
-  background: var(--color-bg);
+  background: var(--color-nav);
   padding: 1rem;
   border-radius: 5px;
   margin-top: 1rem;
   margin-left: -4.2rem;
+  word-wrap: break-word;
+
 }
 
 .roomListRoom__actions svg {
@@ -907,7 +915,11 @@ li {
 }
 
 .profile__about {
+  width: fit-content;
+  background-color: black;
   margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .profile__about h3 {
@@ -1081,7 +1093,7 @@ li {
 }
 
 .threads {
-  background: var(--color-bg);
+  background: var(--color-nav);
   border-radius: 0.7rem;
   overflow-y: auto;
   height: 100%;
@@ -1158,6 +1170,9 @@ li {
   color: var(--color-light-gray);
 }
 
+.participants{
+  height: fit-content;
+}
 .participants__top span {
   color: var(--color-main);
   font-size: 1.3rem;
